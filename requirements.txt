@@ -1,0 +1,58 @@
+# ============================================
+# 📦 Film Öneri Sistemi - Gerekli Kütüphaneler
+# ============================================
+# 
+# Bu dosya projenin çalışması için gereken
+# tüm Python kütüphanelerini listeler.
+#
+# Kurulum: pip install -r requirements.txt
+# ============================================
+
+# Veri İşleme Kütüphaneleri
+# -------------------------
+# pandas: Excel gibi tablo verilerini işlemek için
+# Örnek: Filmler tablosu, kullanıcı puanları
+pandas>=1.5.0
+
+# numpy: Matematiksel işlemler için
+# Örnek: Matris çarpımı, ortalama hesaplama
+numpy>=1.21.0
+
+# Makine Öğrenmesi Kütüphaneleri
+# ------------------------------
+# scikit-learn: Genel makine öğrenmesi araçları
+# Örnek: Model eğitimi, veri bölme
+scikit-learn>=1.0.0
+
+# scikit-surprise: Öneri sistemleri için özel kütüphane
+# Örnek: SVD, KNN algoritmaları
+scikit-surprise>=1.1.3
+
+# Görselleştirme Kütüphaneleri
+# ----------------------------
+# matplotlib: Grafik çizimi
+# Örnek: Çubuk grafik, çizgi grafik
+matplotlib>=3.5.0
+
+# seaborn: Daha güzel grafikler
+# Örnek: Isı haritaları, dağılım grafikleri
+seaborn>=0.12.0
+
+# Jupyter Notebook
+# ----------------
+# jupyter: İnteraktif Python ortamı
+# Adım adım kod yazıp çalıştırmak için
+jupyter>=1.0.0
+
+# Yardımcı Kütüphaneler
+# ---------------------
+# requests: İnternetten veri indirmek için
+# Örnek: MovieLens veri setini indirme
+requests>=2.28.0
+
+# tqdm: İlerleme çubuğu göstermek için
+# Örnek: İndirme sırasında yüzde gösterme
+tqdm>=4.64.0
+
+# pytest: Testleri çalıştırmak için
+pytest>=7.0.0
