@@ -152,12 +152,12 @@ class HybridModel(BaseModel):
         # Her iki modelden tahmin al
         try:
             icerik_tahmin = self.icerik_modeli.tahmin_et(kullanici_id, film_id)
-        except Exception:
+        except (KeyError, ValueError, RuntimeError):
             icerik_tahmin = self.puanlar['rating'].mean()
         
         try:
             isbirligi_tahmin = self.isbirligi_modeli.tahmin_et(kullanici_id, film_id)
-        except Exception:
+        except (KeyError, ValueError, RuntimeError):
             isbirligi_tahmin = self.puanlar['rating'].mean()
         
         # Ağırlıklı ortalama
